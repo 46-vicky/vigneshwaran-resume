@@ -193,12 +193,9 @@ p {
     background: #03a9f4;
 }
 
-
-/*
 @media (max-width: 1000px) {
     .container {
         margin: 10px;
         grid-template-columns: repeat(1, 1fr);
     }
 }
-*/
