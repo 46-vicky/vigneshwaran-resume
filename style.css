@@ -7,10 +7,8 @@
 }
 
 body {
-    background: lightblue;
     display: flex;
     justify-content: center;
-    align-items: center;
     min-height: 100vh;
 }
 
@@ -18,18 +16,18 @@ body {
     position: relative;
     width: 100%;
     max-width: 1000px;
-    min-height: 1000px;
+    height:fit-content;
     margin: 40px;
     background: #fff;
-    display: grid;
-    grid-template-columns: 1.2fr 2fr;
-    box-shadow: 0 35px 55px, rgba(0, 0, 0, 0.1)
+    display: flex;
+    box-shadow: 0 35px 55px, rgba(0, 0, 0, 0.1);
 }
 
 .container .left-side {
     position: relative;
     background: #003147;
-    padding: 40px;
+    padding: 40px 30px;
+    min-width:300px;
 }
 
 .profiletext {
@@ -47,13 +45,14 @@ body {
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
+    background-color: #03b8ff;
 }
 
 .profiletext .imgbox img {
     position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
+    top: 5px;
+    left: 20px;
+    width: 82%;
     height: 100%;
     object-fit: cover;
 }
@@ -158,9 +157,30 @@ p {
 }
 
 .about ul li {
-    margin: 10px 0;
+    margin: 15px 0;
 }
-
+.about ul li p{
+    font-size:16px;
+    margin:10px 0;
+    line-height: 25px;
+    position:relative;
+    padding:0 15px;
+}
+.about ul li p::before{
+    content: "";
+    position: absolute;
+    width:3px;
+    height:3px;
+    border-radius: 50%;
+    border:1.5px solid;
+    left:3px;
+    top:10px;
+}
+.about ul li a{
+    text-decoration: none;
+    color:#0071a4;
+    white-space: nowrap;
+}
 .about ul li span {
     color: #0f465f;
 }
